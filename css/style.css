@@ -1,0 +1,137 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  width: 1440px;
+  background-color: var(--light-grayish-cyan);
+  text-align: center;
+}
+.logo {
+  margin: auto;
+  margin-top: 163px;
+}
+.app-container {
+  background-color: white;
+  height: 480px;
+  width: 921px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 81px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.input_section {
+  height: 417px;
+  width: 413px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input-value_section,
+.num-of-ppl-input_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#input-value {
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 12px;
+  background-position-x: 15px;
+}
+#num-of-ppl-input {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 12px;
+  background-position-x: 15px;
+}
+.output_section {
+  background-color: var(--very-dark-cyan);
+  height: 417px;
+  width: 413px;
+  border-radius: 15px;
+}
+.tip-percentage_section {
+  width: 380px;
+}
+.percentage-btn {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  height: 48px;
+  width: 117px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+.percentage-btn:hover {
+  background-color: var(--strong-cyan);
+  cursor: pointer;
+}
+#custom-percentage {
+  height: 48px;
+  width: 117px;
+  font-size: 24px;
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+  text-align: right;
+}
+.input-field {
+  border: none;
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-grayish-cyan);
+  border-radius: 7px;
+  width: 376px;
+  height: 44px;
+  text-align: right;
+  font-size: 24px;
+  margin-top: 5px;
+}
+.input-field:hover,
+#custom-percentage:hover {
+  cursor: pointer;
+  border: 2px solid var(--strong-cyan);
+}
+h1 {
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+h1,
+label {
+  color: var(--dark-grayish-cyan);
+}
+.tip-percentage_section,
+.input-value_section,
+.num-of-ppl-input_section {
+  margin: 15px auto;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
