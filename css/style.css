@@ -1,5 +1,6 @@
 :root {
   --strong-cyan: hsl(172, 67%, 45%);
+  --light-strong-cyan: #9fe8df;
 
   --very-dark-cyan: hsl(183, 100%, 15%);
   --dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -79,26 +80,28 @@ body {
   height: 48px;
   width: 117px;
   font-size: 24px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
   margin: 5px 0px;
 }
 .percentage-btn:hover {
-  background-color: var(--strong-cyan);
+  background-color: var(--light-strong-cyan);
+  color: var(--very-dark-cyan);
   cursor: pointer;
 }
 #custom-percentage {
-  height: 48px;
-  width: 117px;
+  height: 46px;
+  width: 115px;
   font-size: 24px;
   color: var(--very-dark-cyan);
-  border: none;
+  background-color: var(--very-light-grayish-cyan);
+  border: 2px solid transparent;
   border-radius: 5px;
   margin: 5px 0px;
   text-align: right;
 }
 .input-field {
-  border: none;
+  border: 2px solid transparent;
   color: var(--very-dark-cyan);
   background-color: var(--very-light-grayish-cyan);
   border-radius: 7px;
@@ -126,6 +129,51 @@ label {
 .input-value_section,
 .num-of-ppl-input_section {
   margin: 15px auto;
+}
+
+.output_section div {
+  width: 340px;
+  height: 55px;
+  margin: auto;
+}
+.tip-output_section {
+  position: relative;
+  top: 60px;
+}
+.total-output_section {
+  position: relative;
+  top: 95px;
+}
+.output_section h2 {
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+.output_section h3 {
+  text-align: left;
+  font-size: 13px;
+  color: var(--grayish-cyan);
+}
+.output_section p {
+  text-align: right;
+  color: var(--strong-cyan);
+  font-size: 50px;
+  margin-top: -62px;
+}
+.reset-btn {
+  width: 340px;
+  height: 50px;
+  margin: auto;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  margin-top: 215px;
+}
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: var(--light-strong-cyan);
 }
 
 .attribution {
