@@ -89,6 +89,8 @@ const reset = () => {
   billValue = "";
   numOfPeopleValue = "";
   selectedPct = "";
+  customPctBtn.value = "";
+
   inputs.forEach((input) => {
     input.value = "";
   });

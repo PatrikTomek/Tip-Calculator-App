@@ -23,7 +23,7 @@ body {
 }
 .logo {
   margin: auto;
-  margin-top: 163px;
+  margin-top: 100px;
 }
 .app-container {
   background-color: white;
@@ -31,8 +31,8 @@ body {
   width: 921px;
   border-radius: 25px;
   margin: auto;
-  margin-top: 81px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -196,4 +196,61 @@ label {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    margin-top: 35px;
+  }
+  .app-container {
+    width: 375px;
+    height: 785px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .input_section {
+    width: 320px;
+    height: 460px;
+  }
+  .input_section input {
+    width: 320px;
+  }
+  .tip-percentage_section {
+    width: 324px;
+  }
+  .percentage-btn {
+    width: 153px;
+  }
+  #custom-percentage {
+    width: 149px;
+  }
+  .percentage-btn, #custom-percentage {
+    margin: 7px 2px;
+  }
+  .not-valid-alert {
+    left: 753px;
+    white-space: nowrap;
+  }
+  .output_section {
+    width: 320px;
+    height: 270px;
+  }
+  .output_section p {
+    font-size: 35px;
+    margin-top: -50px;
+  }
+  .tip-output_section {
+    top: 45px;
+  }
+  .total-output_section {
+    top: 60px;
+  }
+  #tip_output, #total_output, .reset-btn {
+    width: 270px;
+  }
+  .reset-btn {
+    margin-top: 85px;
+  }
 }
