@@ -23,31 +23,51 @@
       <div class="input_section">
         <div class="input-value_section">
           <label for="input-value">Bill</label>
-          <input type="number" id="input-value" class="input-field" />
+          <input
+            type="number"
+            min="0"
+            value=""
+            placeholder="0"
+            id="input-value"
+            class="input-field"
+          />
         </div>
 
         <div class="tip-percentage_section">
           <h1 for="">Select Tip %</h1>
-          <button class="percentage-btn">5%</button>
-          <button class="percentage-btn">10%</button>
-          <button class="percentage-btn">15%</button>
-          <button class="percentage-btn">25%</button>
-          <button class="percentage-btn">50%</button>
-          <input type="number" placeholder="Custom" id="custom-percentage" />
+          <button id="5-pct" value="5" class="percentage-btn">5%</button>
+          <button id="10-pct" value="10" class="percentage-btn">10%</button>
+          <button id="15-pct" value="15" class="percentage-btn">15%</button>
+          <button id="25-pct" value="25" class="percentage-btn">25%</button>
+          <button id="50-pct" value="50" class="percentage-btn">50%</button>
+          <input
+            type="number"
+            min="0"
+            value=""
+            placeholder="Custom"
+            id="custom-percentage"
+          />
         </div>
 
         <div class="num-of-ppl-input_section">
           <label for="num-of-ppl-input">Number of People</label>
-          <input type="number" id="num-of-ppl-input" class="input-field" />
+          <p class="not-valid-alert">Can't be zero</p>
+          <input
+            type="number"
+            min="0"
+            value=""
+            placeholder="0"
+            id="num-of-ppl-input"
+            class="input-field"
+          />
         </div>
       </div>
 
       <div class="output_section">
-
         <div class="tip-output_section">
           <h2>Tip Amount</h2>
           <h3>/ person</h3>
-          <p class="tip-amount">$</p>
+          <p class="tip-amount">$0.00</p>
         </div>
 
         <div class="total-output_section">
@@ -67,5 +87,7 @@
       >. Coded by
       <a href="https://patriktomek.cz/" target="_blank">Patrik Tomek</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
