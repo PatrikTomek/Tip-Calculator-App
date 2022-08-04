@@ -17,7 +17,8 @@
 
 body {
   font-family: "Space Mono", monospace;
-  width: 1440px;
+  width: auto;
+  height: auto;
   background-color: var(--light-grayish-cyan);
   text-align: center;
 }
@@ -199,6 +200,7 @@ label {
 }
 
 @media screen and (max-width: 1300px) {
+
   .logo {
     margin-top: 35px;
   }
@@ -226,7 +228,8 @@ label {
   #custom-percentage {
     width: 149px;
   }
-  .percentage-btn, #custom-percentage {
+  .percentage-btn,
+  #custom-percentage {
     margin: 7px 2px;
   }
   .not-valid-alert {
@@ -247,7 +250,9 @@ label {
   .total-output_section {
     top: 60px;
   }
-  #tip_output, #total_output, .reset-btn {
+  #tip_output,
+  #total_output,
+  .reset-btn {
     width: 270px;
   }
   .reset-btn {
